@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>2.5D Pixel Art RPG | Naoise Ryan FYP</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="headerText">
+                <h1>2.5D PIXEL ART RPG</h1>
+                <p>Combining 2D and 3D for a stylised adventure</p>
+            </div>
+            <div>
+                <div class="contact">
+                    <i class="fa fa-id-badge" aria-hidden="true"></i>
+                    <p>Naoise Ryan</p>
+                </div>
+                <div class="contact">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p>naoiseryan20@gmail.com</p>
+                </div>
+
+                <div class="contact">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    <p>linkedin.com/in/naoiseryan</p>
+                </div>
+
+                <div class="contact">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <p>github.com/Naoise-Ryan</p>
+                </div>
+            </div>
+            <img src="assets/img/screenshot2.png">
+            <nav>
+                <a href="https://naoiseryan.itch.io/25d-pixel-art-rpg-final-year-project" target="_blank">Play Now</a>
+            </nav>
+        </header>
+
+        <section>
+            <article>
+                <h1>Information</h1>
+                <p>My Project is a game developed in <span class="highlight">Unity</span> that blends 2D and 3D assets to create a stylised game.<br><br>
+                    
+                    2.5D Pixel Art RPG was created to show off my <span class="highlight">Programming</span>, 
+                    <span class="highlight">Art</span> and <span class="highlight">Design</span> skills from my time in college 
+                    and to show my love for retro games and giving them a modern twist.<br><br>
+
+                    I came into this project with no prior experience in 
+                    <span class="highlight">Unity</span> or <span class="highlight">Crocotile3D</span> and learned how  
+                    to create and apply my own workflow for working across multiple software, I learned <span class="highlight">C#</span> 
+                    to code the gameplay and work with Unity's shader system.<br><br>
+
+                    My goal was to create a <span class="highlight">playable game</span> with working menus, combat and collectables 
+                </p>
+                
+                <video width="2560" height="1440" controls>
+                    <source src="assets/video/walkthrough.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </article>
+        </section>
+
+        <section>
+            <h1>Software Used</h1>
+            <div class="sectionRow">
+                <article class="softwareContainer">
+                    <img src="assets/img/unity.png" class="softwareIcon">
+                    <h2>Unity</h2>
+                    <p>The game was made in Unity and coded in C#</p>
+                </article>
+                <article class="softwareContainer">
+                    <img src="assets/img/aseprite.png" class="softwareIcon">
+                    <h2>Aseprite</h2>
+                    <p>Aseprite was used to create the sprite / pixel art for the textures</p>
+                </article>
+                <article class="softwareContainer">
+                    <img src="assets/img/crocotile.png" class="softwareIcon">
+                    <h2>Crocotile3D</h2>
+                    <p>The 3D models were created using Crocotile3D</p>
+                </article>
+                <article class="softwareContainer">
+                    <img src="assets/img/blender.png" class="softwareIcon">
+                    <h2>Blender</h2>
+                    <p>Blender was also used to work on and refine the 3D models</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="features">
+            <h1>Features</h1>
+            <div class="sectionRow">
+                <article class="featureContainer">
+                    <img src="assets/img/system.png" class="zoomable">
+                    <h2>Custom State Machine</h2>
+                    <p>The game uses a custom <span class="highlight">Finite-State Machine</span> that manages all character and entity behaviour such as movement, combat,
+                        jumping and falling states. <span class="highlight">Unity's event system</span> is used to reduce tight coupling between systems to improve reusability and scalability 
+                    </p>
+                </article>
+                <article class="featureContainer">
+                    <img src="assets/img/inheritance.png" class="zoomable">
+                    <h2>Inheritance based Architecture</h2>
+                    <p>All characters and entities are built using <span class="highlight">inheritance</span>, classes such as player and enemy extend from a <span class="highlight">shared base 
+                        class</span> allowing them to reuse and override code keeping the code organised and scalable
+                    </p>
+                </article>
+            </div>
+
+            <div class="sectionRow">
+                <article class="featureContainer">
+                    <img src="assets/img/components.png" class="zoomable">
+                    <h2>Modular Systems</h2>
+                    <p>All systems in the game were designed as <span class="highlight">independent Unity components</span>, such as 
+                        Health, Movement, State Machines, detection and scoring systems allowing me to easily reuse 
+                        and maintain my codebase efficiently throughout development
+                    </p>
+                </article>
+                <article class="featureContainer">
+                    <img src="assets/img/attacked.png" class="zoomable">
+                    <h2>Realtime Combat</h2>
+                    <p>My game features real time sword <span class="highlight">combat</span> against enemies. Each enemy has its own state machine, logic and animations 
+                        as it tries to hunt down the player
+                    </p>
+                </article>
+            </div>
+            
+            <div class="sectionRow">
+                <article class="featureContainer">
+                    <img src="assets/img/pausemenu.png" class="zoomable">
+                    <h2>Dynamic Menus</h2>
+                    <p>The game features <span class="highlight">dynamic</span> pause and game over screens that reflect the players progress during the game with detailed Information 
+                    </p>
+                </article>
+                <article class="featureContainer">
+                    <img src="assets/img/gameover.png" class="zoomable">
+                    <h2>Custom Scoring System</h2>
+                    <p>The game <span class="highlight">tracks your stats</span> as you play and awards you a rank depending on how you performed at the end 
+                        with S being the best and D being the worst 
+                    </p>
+                </article>
+            </div>
+
+            <div class="sectionRow">
+                <article class="featureContainer">
+                    <img src="assets/img/customartwork.png" class="zoomable">
+                    <h2>Custom Artwork</h2>
+                    <p>All of the UI Design, 2D artwork and 3D models were <span class="highlight">custom made by me</span> for the game to give it a consistent artstyle</p>
+                </article>
+                <article class="featureContainer">
+                    <img src="assets/img/screenshot11.png" class="zoomable">
+                    <h2>Hidden Collectables</h2>
+                    <p>Throughout the level are many coins <span class="highlight">hidden</span> in secret areas, inside boxes and behind objects can you find them all?</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h1>Screenshots</h1>
+            <div class="sectionRow">
+                <article>
+                    <img src="assets/img/screenshot3.png" class="zoomable">
+                </article>
+
+                <article>
+                    <img src="assets/img/screenshot4.png" class="zoomable">
+                </article>
+            </div>
+            <div class="sectionRow">
+                <article>
+                    <img src="assets/img/screenshot5.png" class="zoomable">
+                </article>
+
+                <article>
+                    <img src="assets/img/screenshot6.png" class="zoomable">
+                </article>
+            </div>
+            <div class="sectionRow">
+                <article>
+                    <img src="assets/img/screenshot9.png" class="zoomable">
+                </article>
+
+                <article>
+                    <img src="assets/img/screenshot10.png" class="zoomable">
+                </article>
+            </div>
+            <div class="sectionRow">
+                <article>
+                    <img src="assets/img/screenshot8.png" class="zoomable">
+                </article>
+
+                <article>
+                    <img src="assets/img/screenshot1.png" class="zoomable">
+                </article>
+            </div>
+            <div class="sectionRow">
+                <article>
+                    <img src="assets/img/mainmenu.png" class="zoomable">
+                </article>
+
+                <article>
+                    <img src="assets/img/LevelSelect.png" class="zoomable">
+                </article>
+            </div>
+        </section>
+
+        <footer>
+            <h1>Contact</h1>
+            <div class="contact">
+                <i class="fa fa-id-badge" aria-hidden="true"></i>
+                <p>Naoise Ryan</p>
+            </div>
+
+            <div class="contact">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>naoiseryan20@gmail.com</p>
+            </div>
+
+            <div class="contact">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <p>linkedin.com/in/naoiseryan</p>
+            </div>
+
+            <div class="contact">
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <p>github.com/Naoise-Ryan</p>
+            </div>
+        </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll(".zoomable");
+
+    const overlay = document.createElement("div");
+    overlay.classList.add("zoomOverlay");
+    overlay.style.display = "none";
+    document.body.appendChild(overlay);
+
+    function closeZoom() {
+        document.querySelectorAll(".zoomed").forEach(img => {
+            img.classList.remove("zoomed");
+        });
+        overlay.style.display = "none";
+        document.body.style.overflow = "";
+    }
+
+    images.forEach(img => {
+        img.addEventListener("click", (e) => {
+            e.stopPropagation();
+
+            if (img.classList.contains("zoomed")) {
+                closeZoom();
+            } else {
+                closeZoom();
+                img.classList.add("zoomed");
+                overlay.style.display = "block";
+                document.body.style.overflow = "hidden";
+            }
+        });
+    });
+
+    overlay.addEventListener("click", closeZoom);
+    document.addEventListener("click", closeZoom);
+});
+</script>
+    </body>
+</html>
