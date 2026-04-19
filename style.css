@@ -22,7 +22,7 @@ body {
 
   gap: 30px;
 
-  background-image: url("assets/img/stone.png");
+  background-image: url("assets/img/stone.webp");
   background-repeat: repeat;
   background-size: 200px 200px;
   image-rendering: pixelated;
