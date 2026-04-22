@@ -24,7 +24,7 @@ body {
 
   background-image: url("assets/img/stone.webp");
   background-repeat: repeat;
-  background-size: 200px 200px;
+  background-size: 400px 400px;
   image-rendering: pixelated;
 }
 
@@ -75,8 +75,12 @@ h2 {
   font-size: 40px;
 }
 
-p {
+p, a {
   font-size: 28px;
+}
+
+a:hover {
+  color: #ffff00;
 }
 
 img, video {
@@ -248,7 +252,7 @@ img.softwareIcon {
     font-size: 24px;
   }
 
-  p {
+  p, a {
     font-size: 22px;
   }
 
